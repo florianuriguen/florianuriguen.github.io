@@ -1,0 +1,62 @@
+<mvc:View controllerName="flo.launchpad.controller.Timeline" height="100vh" xmlns="sap.gantt.simple" xmlns:axistime="sap.gantt.axistime"
+	xmlns:config="sap.gantt.config" 
+	xmlns:m="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"  xmlns:table="sap.ui.table">
+	<m:Page showHeader="false" showFooter="false">
+		<m:content>
+		<GanttChartContainer>
+			<!-- <toolbar> -->
+				<!-- <ContainerToolbar showBirdEyeButton="true" showSettingButton="false"> -->
+				<!-- <m:Button text="{i18n>Contact}" press=".onContact"/> -->
+				<!-- </ContainerToolbar> -->
+			<!-- </toolbar> -->
+			<GanttChartWithTable 	id="ganttChart" shapeSelectionMode="Single" enableNowLine="true" 
+									nowLineInUTC="true" 
+									shapeDoubleClick=".onShapeDoubleClick">
+
+				<table>
+					<table:TreeTable selectionMode="Single" visibleRowCountMode="Auto" selectionBehavior="RowOnly"
+						rows="{ path: '/root', parameters: { arrayNames: ['children'], numberOfExpandedLevels: 4 } }">
+						<table:columns>
+							<table:Column label="{i18n>CV}" template="text"/>
+						</table:columns>
+						<table:rowSettingsTemplate>
+							<GanttRowSettings rowId="{id}" shapes1="{path: 'task', templateShareable:true}"
+														shapes2="{path: 'training', templateShareable:true}">
+								<shapes1>
+									<BaseRectangle countInBirdEye="{countInBirdEye}"  shapeId="{id}" 
+										showTitle="true" title="{text}"
+										tooltip="{
+												parts: [
+													'text',
+													'startTime',
+													'endTime'
+												],
+												formatter: 'jQuery.sap.formatMessage'
+										}"
+										expandable="true"
+										fill="{fill}" rx="4" ry="4"									
+										time="{path: 'startTime', formatter: '.Formatter.TimeConverter'}" 
+										endTime="{path: 'endTime', formatter: '.Formatter.TimeConverter'}"/>
+								</shapes1>
+								<shapes2>
+									<BaseGroup shapeId="{id}" expandable="true">
+										<shapes>
+											<BaseImage countInBirdEye="{countInBirdEye}" 
+												tooltip="{tooltip}"
+												expandable="true"
+												fill="{fill}" src="sap-icon://education"							
+												time="{path: 'startTime', formatter: '.Formatter.TimeConverter'}" 
+												endTime="{path: 'endTime', formatter: '.Formatter.TimeConverter'}"/>
+										</shapes>
+									</BaseGroup>
+								</shapes2>
+							</GanttRowSettings>
+						</table:rowSettingsTemplate>
+					</table:TreeTable>
+				</table>
+			</GanttChartWithTable>
+		</GanttChartContainer>
+		</m:content>
+	</m:Page>
+</mvc:View>

@@ -1,0 +1,531 @@
+/* Enter your custom styles here */
+
+.TileContainer {
+    width: 30vh !important;
+}
+.background{
+    background-color: #000000 !important;
+}
+/*
+ * Footer Toolbar
+ */
+.sapMIBar-CTX.sapMFooter-CTX{
+    background-color: #000000 !important;
+    border-top: "0px" !important;
+}
+html.sap-desktop .sapMIBar.sapMFooter-CTX{
+    background-color: #000000 !important;
+    border-top: none !important;
+}
+
+/*
+ * Icons
+ */
+span.sapMBtnInner.sapMBtnEmphasized{
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color:#000000 !important;
+}
+span.sapMBtnInner.sapMBtnEmphasized .sapUiIcon, span.sapMBtnInner.sapMBtnEmphasized sapMBtnIcon{
+    color:#000000 !important;
+}
+
+/*
+ * Header
+ */
+
+ .header {
+    /* Hintergrundbild */
+    background-color: #000000;
+    /*background-image: url("../images/background.jpg");*/
+    /* Festlegen der Bildhöhe */
+    height: 900px;
+    /* Erzeugen des Parallax Scrolling Effekts */
+    background-attachment: fixed;
+    background-position: center;
+    /* zentriert das Hintergrundbild */
+    background-repeat: no-repeat;
+    /* verhindert einen Wiederholung des Bildes*/
+    background-size: cover;
+    /* skaliert das Bild, sodass es den gesamten Container abdeckt */
+}
+
+#gantt {
+    height: 900px;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.white{
+    color: #FFFFFF !important;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 7vh;
+        line-height: 1em;
+    }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 200px) {
+    h1 {
+        font-size: 1em;
+        line-height: 1em;
+    }
+}
+
+.about-us-hero.animated {
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: auto;
+    width: 60%;
+    height: auto
+}
+
+.about-us-hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 3;
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    color: #fff
+}
+
+.hero-section.new,
+.lp---content-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox
+}
+
+.blog-modal-email-form,
+.hero-section.new {
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical
+}
+
+.hero-section {
+    width: 100%;
+    height: 80vh
+}
+
+.hero-section.new {
+    display: flex;
+    height: 100vh;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #000000
+}
+
+.ui5container {
+    height: 100vh;
+}
+
+
+/*
+*
+*
+*
+*
+*/
+
+
+/*
+ * Scroll Button
+ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.next {
+    background: url(../images/arrow.png) no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    -moz-transition: background-position 0.5s;
+    -webkit-transition: background-position 0.5s;
+    -o-transition: background-position 0.5s;
+    transition: background-position 0.5s;
+}
+
+.next:hover {
+    background-position: center 10px;
+    -moz-transition: background-position 0.25s;
+    -webkit-transition: background-position 0.25s;
+    -o-transition: background-position 0.25s;
+    transition: background-position 0.25s;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.arrow-link.new {
+    left: 0;
+    top: 90vh;
+    right: 0;
+    bottom: auto
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block
+}
+
+.arrow-link {
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    right: 0;
+    bottom: auto;
+    z-index: 3;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: auto auto 40px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+
+/*
+ * Footer
+ */
+
+.site-footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+#social-wrapper {
+    text-align: center;
+}
+
+
+/*Social Media Icons*/
+
+.social-wrapper {
+    text-align: center;
+}
+
+.social-wrapper ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.instagram-icon,
+.linkedin-icon {
+    margin-top: .625em;
+    width: 30px;
+    height: 30px;
+}
+
+.instagram-icon:hover,
+.linkedin-icon:hover,
+.footer-nav p {
+    text-align: center;
+}
+
+
+/*
+ * Text Carousel
+ */
+
+.slider {
+    overflow: visible;
+    position: relative;
+}
+
+.mask {
+    overflow: hidden;
+    height: 320px;
+}
+
+.slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.slider li {
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+}
+
+.slider li.anim1 {
+    animation: cycle 15s linear infinite;
+}
+
+.slider li.anim2 {
+    animation: cycle2 15s linear infinite;
+}
+
+.slider li.anim3 {
+    animation: cycle3 15s linear infinite;
+}
+
+.slider li.anim4 {
+    animation: cycle4 15s linear infinite;
+}
+
+.slider li.anim5 {
+    animation: cycle5 15s linear infinite;
+}
+
+.slider:hover li {
+    animation-play-state: paused;
+}
+
+@keyframes cycle {
+    0% {
+        top: 0px;
+    }
+    4% {
+        top: 0px;
+    }
+    16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    50% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    96% {
+        top: -325px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes cycle2 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle3 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+    56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle4 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    56% {
+        top: -325px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+        opacity: 1;
+    }
+    64% {
+        top: 0px;
+        opacity: 1;
+    }
+    76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes cycle5 {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    76% {
+        top: -325px;
+        opacity: 0;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    84% {
+        top: 0px;
+        opacity: 1;
+    }
+    96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+}

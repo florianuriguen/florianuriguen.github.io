@@ -1,0 +1,75 @@
+<mvc:View controllerName="flo.launchpad.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" height="100vh" > 
+	<Page showHeader="false" class="background" showFooter="false"> 
+		<content>
+			<VBox  alignItems="Center" justifyContent="Center" height="100%">
+				<l:HorizontalLayout class="sapUiTinyMarginTopBottom" allowWrapping="true">
+					<GenericTile id="timeline" header="{i18n>Timeline}" subheader="{i18n>TimelineSubheader}" press="onTilePress"
+						class="sapUiTinyMarginEnd sapUiTinyMarginTopBottom TileContainer">
+						<TileContent unit="" footer="{i18n>TimelineDeveloperSince}">
+							<ImageContent src="sap-icon://gantt-bars"/>
+						</TileContent>
+						<customData>
+							<core:CustomData key="targetApp" value="Timeline"/>
+						</customData>
+					</GenericTile>
+					<GenericTile id="skills" header="{i18n>Skills}" subheader="{i18n>SkillsSubheader}" press="onTilePress"
+						class="sapUiTinyMarginEnd sapUiTinyMarginTopBottom TileContainer" state="Loading">
+						<TileContent unit="" footer="UNDER CONSTRUCTION">
+							<ImageContent src="sap-icon://sap-ui5"/>
+						</TileContent>
+						<customData>
+							<core:CustomData key="targetApp" value="Skills"/>
+						</customData>
+					</GenericTile>
+					<GenericTile id="abap" header="{i18n>ABAP}" subheader="{i18n>ABAPSubheader}" press="onTilePress"
+						class="sapUiTinyMarginEnd sapUiTinyMarginTopBottom TileContainer" state="Loading">
+						<TileContent unit="" footer="UNDER CONSTRUCTION">
+							<ImageContent src="images/abaps-not-dead.webp"/>
+						</TileContent>
+						<customData>
+							<core:CustomData key="targetApp" value="ABAP"/>
+						</customData>
+					</GenericTile>
+					<GenericTile id="about"  header="{i18n>About}" subheader="{i18n>AboutSubheader}" press="onTilePress" frameType="OneByOne"
+						class="sapUiTinyMarginEnd sapUiTinyMarginTopBottom TileContainer">
+						<TileContent unit="" footer="" frameType="OneByOne">
+							<!-- <ImageContent src="selfie.png"/> -->
+							<NumericContent scale="years and counting" value="29" valueColor="Success" indicator="Up" withMargin="false" />
+						</TileContent>
+						<customData>
+							<core:CustomData key="targetApp" value="About"/>
+						</customData>
+					</GenericTile>
+					<GenericTile id="images"  press="onTilePress" frameType="OneByOne"
+						class="sapUiTinyMarginEnd sapUiTinyMarginTopBottom TileContainer"
+						backgroundImage="images/snow.jpg">
+						<TileContent unit="" footer="" frameType="OneByOne">
+							<NewsContent
+								contentText="{i18n>Images}"
+								subheader="{i18n>ImagesSubheader}" />
+						</TileContent>
+						<customData>
+							<core:CustomData key="targetApp" value="Images"/>
+						</customData>
+					</GenericTile>
+				</l:HorizontalLayout>
+				<!-- <MessageStrip showIcon="true" type="Information" text="{i18n>BlogPosts}" width="100%"/> -->
+				<!-- <l:HorizontalLayout class="sapUiTinyMarginTopBottom" allowWrapping="true"> -->
+					<!-- <GenericTile -->
+						<!-- backgroundImage="test-resources/sap/m/demokit/sample/GenericTileAsFeedTile/images/NewsImage2.png" -->
+						<!-- frameType="TwoByOne" press="onTilePress"> -->
+						<!-- <TileContent footer="December 23, 2020"> -->
+							<!-- <NewsContent -->
+								<!-- contentText="Maybe I will write a blog here" -->
+								<!-- subheader="maybe...." /> -->
+						<!-- </TileContent> -->
+						<!-- <customData> -->
+							<!-- <core:CustomData key="targetApp" value="About"/> -->
+						<!-- </customData> -->
+					<!-- </GenericTile> -->
+				<!-- </l:HorizontalLayout> -->
+			</VBox>
+		</content>
+	</Page>
+</mvc:View>

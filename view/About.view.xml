@@ -1,0 +1,23 @@
+<mvc:View controllerName="flo.launchpad.controller.About" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"  > 
+	<Page showHeader="false" class="background" showFooter="true"> 
+		<content>
+			<VBox  justifyContent="Center" height="30%">
+                <Image src="images/photos/patagonia.jpg" width="100%"  />
+                <VBox class="sapUiLargeMargin"> 
+									
+					<Title titleStyle="H1" text="{i18n>Introduction}" class="white" textAlign="Begin"/>
+					<Title titleStyle="H4" text="{i18n>AboutContext}" class="white" textAlign="Begin" width="60%" wrapping="true"/>
+
+                </VBox>
+            </VBox>
+		</content>
+		<footer class="background" >
+			<OverflowToolbar>
+				<!-- <ToolbarSpacer/> -->
+				<Button text="{i18n>contact}" type="Emphasized" icon="sap-icon://letter" class="sapUiLargeMargin"
+						press=".onContactPress"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>

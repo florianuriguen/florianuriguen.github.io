@@ -1,0 +1,11 @@
+<mvc:View controllerName="flo.launchpad.controller.Images" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout"  > 
+	<Page showHeader="false" class="background" showFooter="false"> 
+		<content>
+            <Carousel id="imageCarousel" class="sapUiContentPadding background" loop="true" showPageIndicator="false" 
+                pages = "{ path: 'images>/ImagesCollection' }">
+                <Image src="{images>src}" alt="{images>text}" />
+            </Carousel>
+		</content>
+	</Page>
+</mvc:View>
